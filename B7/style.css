@@ -1,0 +1,12 @@
+body {
+    height: 1000vh;
+    margin: 0;
+    background-color: #131319;
+}
+
+#scroll-indicator {
+    position: fixed;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, orange, red);
+}
