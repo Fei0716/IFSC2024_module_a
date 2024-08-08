@@ -1,12 +1,26 @@
 body {
     height: 1000vh;
     margin: 0;
-    background-color: #131319;
+    background-color: #ffffff;
 }
 
-#scroll-indicator {
+body {
+    position: relative;
+    height: 1000vh;
+    margin: 0;
+    background-image: linear-gradient(to top right, orange 50%, white 50%);
+    background-size: 100% calc(100% - 100vh + 10px);
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: '';
     position: fixed;
+    height: 100%;
     width: 100%;
-    height: 10px;
-    background-image: linear-gradient(to right, orange, red);
+    background-color: white;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }

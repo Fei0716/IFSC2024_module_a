@@ -7,9 +7,7 @@ function formatNumber($index, $num)
 }
 
 $formattedNumbers = array_map('formatNumber', array_keys($numbers), $numbers);
-
 echo "Original Array<br>(<br> &ensp; " . implode(",<br>&ensp; ", $formattedNumbers) . "<br>)<br>";
-
 if (isset($_GET['factor'])) {
     $factor = $_GET['factor'];
     $modifyNumbers = function ($index, $num) use ($factor) {
